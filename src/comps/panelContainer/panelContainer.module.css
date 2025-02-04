@@ -1,0 +1,20 @@
+.panelContainer {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  position: absolute;
+}
+
+.panelContainer.bottom {
+  bottom: 50px;
+}
+
+.panelContainer.top {
+  top: 50px;
+  justify-content: space-evenly;
+}

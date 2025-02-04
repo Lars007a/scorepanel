@@ -1,0 +1,45 @@
+.teamSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  & div {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  & div button {
+    flex: 1;
+  }
+
+  & img {
+    height: 32px;
+    width: auto;
+    cursor: pointer;
+  }
+}
+
+/* general input stil */
+input[type="text"] {
+  /*   font-family: "Oswald", serif;
+ */
+
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  transition: border 0.2s, outline 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+
+  padding-left: 10px;
+
+  border: 1px solid #ccc;
+}
+
+input[type="text"]:focus {
+  border: 1px solid var(--bugbcColor);
+}
+
+/* general logo style */
+img {
+}

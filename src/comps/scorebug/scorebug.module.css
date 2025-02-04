@@ -1,0 +1,84 @@
+.panel {
+  /*   background-color: rgb(0, 255, 132);
+ */
+  border-radius: 20px;
+
+  /*   padding: 12px;
+ */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.outline {
+  background-color: var(--bugbcColor);
+  padding: 8px 12px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.teamSection {
+  background-color: var(--bugContrastColor);
+  color: var(--bugbcColor);
+
+  font-size: 20px;
+  letter-spacing: 4px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 12px;
+
+  border-radius: 10px !important;
+}
+
+/* .first {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.second {
+  border-radius: 0px 20px 20px 0px;
+} */
+
+.logoimg {
+  width: 42px;
+  height: auto;
+  object-fit: cover;
+
+  border-radius: 5px;
+}
+
+.timerSection {
+  background-color: var(--bugContrastColor);
+  padding: 0px 20px 3px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  border-radius: 10px;
+  .halfTime {
+    color: var(--bugbcColor);
+    font-size: 0.9rem;
+  }
+
+  & .timer {
+    color: var(--bugbcColor);
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+
+.teamscore {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px;
+  background-color: var(--bugbcColor);
+  color: var(--bugContrastColor);
+}

@@ -1,0 +1,33 @@
+/* allign ikon i knappen lige med teksten. */
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* general knap stil */
+.btn {
+  background-color: var(--bugbcColor);
+  color: var(--bugContrastColor);
+  color: white;
+  border: 0;
+  outline: none;
+  padding: 10px 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 0.8rem;
+  font-family: "Oswald", serif;
+  border-radius: 10px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0d4882;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn svg {
+  color: var(--bugContrastColor);
+  color: white;
+}
