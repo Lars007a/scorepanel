@@ -10,8 +10,14 @@ export default function adminPanelSingleTeam({ teamObj, setTeamObj }) {
   const [teamField, setTeamField] = useState(teamObj.name);
 
   const addPoint = () => {
+    teamObj.recentGoal = true;
     teamObj.score++;
     setTeamObj(teamObj);
+
+    setTimeout(() => {
+      teamObj.recentGoal = false;
+      setTeamObj(teamObj);
+    }, 3000);
   };
 
   const removePoint = () => {
@@ -90,8 +96,8 @@ export default function adminPanelSingleTeam({ teamObj, setTeamObj }) {
           Mål <BiMinus />
         </Btn>
       </div>
-
-      <Btn>2 min udvisning</Btn>
+      {/*       <Btn clickFunc={toMinuteFunc}>2 min udvisning</Btn>
+       */}{" "}
     </section>
   );
 }

@@ -39,6 +39,11 @@ export default function adminGeneralSettings({ getter, setter }) {
     } else {
       getter.seconds++;
     }
+
+    setter(getter);
+
+    console.log("kører");
+
     setter(getter);
   };
 

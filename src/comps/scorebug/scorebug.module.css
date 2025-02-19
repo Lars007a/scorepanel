@@ -1,20 +1,19 @@
-.panel {
-  /*   background-color: rgb(0, 255, 132);
- */
-  border-radius: 20px;
-
-  /*   padding: 12px;
- */
-
+.popupCon {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
+  flex-direction: column;
+  width: var(--scoreBugSize);
 }
 
 .outline {
+  width: var(--scoreBugSize);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
   background-color: var(--bugbcColor);
   padding: 8px 12px;
+  margin-bottom: 0;
   border-radius: 20px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
@@ -45,10 +44,9 @@
 } */
 
 .logoimg {
-  width: 42px;
-  height: auto;
+  width: 50px;
+  height: 40px;
   object-fit: cover;
-
   border-radius: 5px;
 }
 

@@ -11,6 +11,7 @@
 }
 
 .panelContainer.bottom {
+  flex-direction: column;
   bottom: 50px;
 }
 

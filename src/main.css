@@ -4,6 +4,9 @@
   --bugbcColor: #00274d;
   --bugContrastColor: #f7b500;
   --bugTextColor: #ffffff;
+  --successGreen: #2ecc71;
+
+  --scoreBugSize: 600px;
 }
 
 * {

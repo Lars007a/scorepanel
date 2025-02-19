@@ -3,6 +3,7 @@ export let standardTeamLocalStObj = {
   name: "DEN",
   score: 10,
   img: "/imgs/default.png",
+  recentGoal: false,
 };
 
 export let standardGeneralSettingsObj = {

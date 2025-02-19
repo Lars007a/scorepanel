@@ -5,6 +5,7 @@ import {
   standardTeamLocalStObj,
   standardGeneralSettingsObj,
 } from "../../localstorageObject.jsx";
+import Popup from "../popup/popup.jsx";
 
 /* brug for:
 en boks til flag. * 2
@@ -32,33 +33,35 @@ export default function scorebug() {
   return (
     <>
       <PanelContainer bottom={true}>
+        <div className={styles.popupCon}>
+          {team1.recentGoal ? <Popup text={`Mål til ${team1.name}`} /> : ""}
+          {team2.recentGoal ? <Popup text={`Mål til ${team2.name}`} /> : ""}
+        </div>
         <div className={styles.outline}>
-          <div className={styles.panel}>
-            <section className={`${styles.teamSection} ${styles.first}`}>
-              <img src={team1.img} alt="flag" className={styles.logoimg} />
-              <h3>{team1.name}</h3>
-            </section>
+          <section className={`${styles.teamSection} ${styles.first}`}>
+            <img src={team1.img} alt="flag" className={styles.logoimg} />
+            <h3>{team1.name}</h3>
+          </section>
 
-            <section className={styles.teamscore}>
-              <h2>{team1.score}</h2>
-            </section>
+          <section className={styles.teamscore}>
+            <h2>{team1.score}</h2>
+          </section>
 
-            <section className={styles.timerSection}>
-              <h3 className={styles.halfTime}>{general.half}. Halvleg</h3>
-              <h2 className={styles.timer}>
-                {general.minutes}:{general.seconds}
-              </h2>
-            </section>
+          <section className={styles.timerSection}>
+            <h3 className={styles.halfTime}>{general.half}. Halvleg</h3>
+            <h2 className={styles.timer}>
+              {general.minutes}:{general.seconds}
+            </h2>
+          </section>
 
-            <section className={styles.teamscore}>
-              <h2>{team2.score}</h2>
-            </section>
+          <section className={styles.teamscore}>
+            <h2>{team2.score}</h2>
+          </section>
 
-            <section className={`${styles.teamSection} ${styles.second}`}>
-              <h3>{team2.name}</h3>
-              <img src={team2.img} alt="flag" className={styles.logoimg} />
-            </section>
-          </div>
+          <section className={`${styles.teamSection} ${styles.second}`}>
+            <h3>{team2.name}</h3>
+            <img src={team2.img} alt="flag" className={styles.logoimg} />
+          </section>
         </div>
       </PanelContainer>
     </>
