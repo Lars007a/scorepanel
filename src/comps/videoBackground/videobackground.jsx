@@ -1,5 +1,5 @@
 import styles from "./videobackground.module.css";
-import video from "../../assets/bcvideo_cropped2.mp4";
+import video from "../../../public/imgs/bcvideo_cropped2.mp4";
 
 export default function videobc({ children }) {
   return (

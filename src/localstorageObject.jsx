@@ -1,4 +1,4 @@
-import stdImg from "./assets/default.png";
+import stdImg from "../public/imgs/default.png";
 //Definere de basale objekter, der gemes i localstorage.
 
 export let standardTeamLocalStObj = {
