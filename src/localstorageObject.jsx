@@ -1,8 +1,10 @@
+import stdImg from "./assets/default.png";
 //Definere de basale objekter, der gemes i localstorage.
+
 export let standardTeamLocalStObj = {
   name: "DEN",
   score: 10,
-  img: "/imgs/default.png",
+  img: stdImg,
   recentGoal: false,
 };
 
